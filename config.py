@@ -1,4 +1,5 @@
 import sqlite3
+import json
 
 
 if __name__ == "__main__":
@@ -10,5 +11,7 @@ if __name__ == "__main__":
 
     database_connection = sqlite3.connect("test.db")
     database_cursor = database_connection.cursor()
-    database_cursor.execute("CREATE TABLE student(ID int NOT NULL, FirstName varchar(255) NOT NULL, LastName varchar(255) NOT NULL, PRIMARY KEY (ID))")
     
+    with open("config/config.json") as config_file:
+        json.load
+

@@ -1,3 +1,11 @@
 {
-    "databases"
+    "database_tables": {
+        "student": {
+            "PRIMARY_KEY": {"id": "int"},
+            "SECONDARY_KEYS": {
+                "FirstName": "varchar",
+                "LastName": "varchar"
+            }
+        }
+    }
 }
